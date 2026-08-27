@@ -356,9 +356,9 @@
   }
   .about-photos {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   .about-photos img {
     border-radius: 20px;
@@ -367,19 +367,20 @@
     object-fit: cover;
     box-shadow: var(--shadow);
   }
-  .about-photos .tall { aspect-ratio: 3/4.4; }
-  .about-photos .col-shift { margin-top: 44px; }
+  .about-photos .tall { aspect-ratio: 4/3.1; }
   .about-photos .logo-card {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at 50% 38%, var(--bg-alt), var(--surface));
+    aspect-ratio: 2.5/1;
+    background: radial-gradient(circle at 50% 42%, var(--bg-alt), var(--surface));
     box-shadow: var(--shadow);
-    padding: 34px 26px;
+    border-radius: 20px;
+    padding: 28px 40px;
   }
   .about-photos .logo-card img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
     box-shadow: none;
     border-radius: 0;
@@ -854,9 +855,9 @@
   <section id="sobre" class="section-alt">
     <div class="wrap about-grid">
       <div class="about-photos reveal">
-        <img class="tall" src="https://static.wixstatic.com/media/06b801_f1404ea295fc423293ab76ac1ba1b48e~mv2.jpeg/v1/fill/w_500,h_720,al_c,q_90/06b801_f1404ea295fc423293ab76ac1ba1b48e~mv2.jpeg" alt="Consultório de atendimento da clínica">
-        <div class="tall col-shift logo-card">
-          <img src="https://static.wixstatic.com/media/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png/v1/fill/w_700,h_423,al_c,q_95/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png" alt="Centro Integrado Neuroevolução">
+        <img class="tall" src="https://static.wixstatic.com/media/06b801_f1404ea295fc423293ab76ac1ba1b48e~mv2.jpeg/v1/fill/w_820,h_635,al_c,q_90/06b801_f1404ea295fc423293ab76ac1ba1b48e~mv2.jpeg" alt="Consultório de atendimento da clínica">
+        <div class="logo-card">
+          <img src="https://static.wixstatic.com/media/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png/v1/fill/w_900,h_544,al_c,q_95/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png" alt="Centro Integrado Neuroevolução">
         </div>
       </div>
       <div class="about-text reveal">
