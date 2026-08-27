@@ -1,0 +1,5 @@
+*_artifact.html
+artifact_imgs/
+artifact_urls.json
+build_artifacts.py
+.vercel

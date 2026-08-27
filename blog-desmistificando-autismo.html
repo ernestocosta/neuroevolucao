@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desmistificando o Autismo: A Ciência por Trás dos Mitos | Neuroevolução</title>
+<meta name="description" content="Vacinas causam autismo? Autistas não têm empatia? Todo autista é gênio? Entenda a ciência por trás dos principais mitos sobre o Transtorno do Espectro Autista.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,560;0,9..144,650;1,9..144,450;1,9..144,560&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F3EC; --bg-alt: #EFE7F2; --surface: #FFFFFF;
+    --ink: #241A30; --ink-soft: #5B5266; --ink-faint: #8A8194;
+    --plum: #241A30; --plum-2: #3D2C52;
+    --green: #3F7652; --green-deep: #2E5A3E; --green-light: #78B685; --green-pale: #E4EFE6;
+    --border: rgba(36,26,48,0.12); --shadow: 0 30px 60px -30px rgba(36,26,48,0.35); --radius: 22px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1B1420; --bg-alt: #241A30; --surface: #2A2033;
+      --ink: #F5F0EA; --ink-soft: #C7BECF; --ink-faint: #948BA0;
+      --green: #6FB584; --green-deep: #8FCB9F; --green-light: #8FCB9F; --green-pale: rgba(120,182,133,0.16);
+      --border: rgba(245,240,234,0.14); --shadow: 0 30px 60px -30px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1B1420; --bg-alt: #241A30; --surface: #2A2033;
+    --ink: #F5F0EA; --ink-soft: #C7BECF; --ink-faint: #948BA0;
+    --green: #6FB584; --green-deep: #8FCB9F; --green-light: #8FCB9F; --green-pale: rgba(120,182,133,0.16);
+    --border: rgba(245,240,234,0.14); --shadow: 0 30px 60px -30px rgba(0,0,0,0.6);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; font-weight: 560; line-height: 1.15; margin: 0; color: var(--ink); letter-spacing: -0.01em; }
+  p { margin: 0; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  button { font-family: inherit; cursor: pointer; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-deep); }
+  .eyebrow::before { content: ""; width: 26px; height: 1.5px; background: var(--green); display: inline-block; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 30px; border-radius: 100px; font-weight: 700; font-size: 0.95rem; border: 1.5px solid transparent; transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease; white-space: nowrap; }
+  .btn-primary { background: var(--green); color: #fff; box-shadow: 0 16px 32px -14px rgba(63,118,82,0.65); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 38px -14px rgba(63,118,82,0.75); background: var(--green-deep); }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--border); }
+  .btn-ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .btn-sm { padding: 11px 20px; font-size: 0.82rem; }
+  .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+  header { position: sticky; top: 0; z-index: 100; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { height: 40px; width: auto; }
+  .brand-name { font-family: 'Fraunces', serif; font-weight: 650; font-size: 1.08rem; color: var(--ink); letter-spacing: -0.01em; }
+  .brand-name span { color: var(--green); }
+  .nav-links { display: flex; align-items: center; gap: 34px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a { font-size: 0.92rem; font-weight: 600; color: var(--ink-soft); transition: color 0.2s ease; }
+  .nav-links a:hover, .nav-links a.is-current { color: var(--ink); }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .nav-toggle { display: none; background: none; border: none; width: 40px; height: 40px; align-items: center; justify-content: center; }
+  .nav-toggle span, .nav-toggle::before, .nav-toggle::after { content: ""; display: block; width: 22px; height: 2px; background: var(--ink); position: relative; transition: transform 0.25s ease, opacity 0.25s ease; }
+  .nav-toggle::before { position: absolute; transform: translateY(-7px); }
+  .nav-toggle::after { position: absolute; transform: translateY(7px); }
+  .nav-toggle.open span { opacity: 0; }
+  .nav-toggle.open::before { transform: rotate(45deg); }
+  .nav-toggle.open::after { transform: rotate(-45deg); }
+  .mobile-drawer { position: fixed; inset: 0; z-index: 150; background: var(--bg); display: flex; flex-direction: column; padding: 100px 32px 40px; gap: 26px; transform: translateX(100%); transition: transform 0.35s ease; }
+  .mobile-drawer.open { transform: translateX(0); }
+  .mobile-drawer a { font-family: 'Fraunces', serif; font-size: 1.7rem; font-weight: 560; }
+  .mobile-drawer .btn { margin-top: 12px; align-self: flex-start; }
+
+  section { position: relative; padding: 0; }
+  .article-top { padding: 56px 0 0; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.88rem; font-weight: 600; color: var(--ink-soft); }
+  .back-link:hover { color: var(--ink); }
+  .back-link svg { width: 15px; height: 15px; }
+  .article-header { max-width: 780px; margin: 28px auto 0; }
+  .article-header h1 { font-size: clamp(2rem, 4vw, 2.9rem); margin-top: 16px; }
+  .post-meta { display: flex; align-items: center; gap: 14px; font-size: 0.82rem; color: var(--ink-faint); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; flex-wrap: wrap; }
+  .post-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--ink-faint); }
+  .article-body { max-width: 720px; margin: 0 auto; padding: 48px 28px 0; }
+  .article-body > p { color: var(--ink-soft); font-size: 1.08rem; line-height: 1.85; margin-top: 22px; }
+  .article-body h2 { font-size: 1.55rem; margin-top: 52px; }
+  .myth-tag { display: inline-block; background: var(--green-pale); color: var(--green-deep); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 5px 12px; border-radius: 100px; margin-top: 52px; }
+  .article-body h2.myth-title { margin-top: 12px; }
+  .article-body ul, .article-body ol { margin-top: 18px; padding-left: 22px; color: var(--ink-soft); display: flex; flex-direction: column; gap: 12px; }
+  .article-body li { line-height: 1.75; font-size: 1.02rem; }
+  .article-body li::marker { color: var(--green-deep); font-weight: 700; }
+  .article-body strong { color: var(--ink); font-weight: 700; }
+
+  .article-refs { max-width: 720px; margin: 56px auto 0; padding: 0 28px; }
+  .article-refs h2 { font-size: 1.2rem; }
+  .article-refs h3 { font-size: 0.95rem; margin-top: 26px; color: var(--green-deep); }
+  .article-refs ul { margin-top: 12px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+  .article-refs li { font-size: 0.82rem; color: var(--ink-faint); line-height: 1.6; word-break: break-word; }
+
+  .article-cta { max-width: 720px; margin: 56px auto 0; padding: 0 28px 80px; }
+  .article-cta-inner { background: var(--plum); border-radius: 24px; padding: 40px; text-align: center; color: #F5F0EA; }
+  .article-cta-inner h3 { color: #F5F0EA; font-size: 1.3rem; }
+  .article-cta-inner p { color: rgba(245,240,234,0.75); margin-top: 12px; font-size: 0.95rem; }
+  .article-cta-inner .btn { margin-top: 22px; }
+
+  .related { background: var(--bg-alt); padding: 64px 0 80px; margin-top: 0; }
+  .related .wrap > .eyebrow { justify-content: center; display: flex; }
+  .related h2 { text-align: center; margin-top: 14px; font-size: 1.6rem; }
+  .related-grid { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 24px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .related-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .related-card .post-meta { font-size: 0.72rem; }
+  .related-card h3 { font-size: 1rem; margin-top: 10px; line-height: 1.35; }
+
+  footer { background: var(--plum); color: rgba(245,240,234,0.7); padding: 64px 0 28px; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 44px; border-bottom: 1px solid rgba(245,240,234,0.12); }
+  .footer-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .footer-brand img { height: 36px; }
+  .footer-brand span { font-family: 'Fraunces', serif; font-weight: 650; color: #F5F0EA; font-size: 1.05rem; }
+  footer p.tagline { max-width: 30ch; font-size: 0.92rem; line-height: 1.6; }
+  .footer-col h4 { color: #F5F0EA; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; margin-bottom: 18px; font-family: 'Inter', sans-serif; }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .footer-col a { font-size: 0.92rem; transition: color 0.2s ease; }
+  .footer-col a:hover { color: #F5F0EA; }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 26px; font-size: 0.82rem; flex-wrap: wrap; gap: 12px; }
+  .social-row { display: flex; gap: 12px; }
+  .social-row a { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(245,240,234,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s ease, border-color 0.2s ease; }
+  .social-row a:hover { background: var(--green); border-color: var(--green); }
+  .social-row svg { width: 17px; height: 17px; }
+
+  .float-wa { position: fixed; right: 22px; bottom: 22px; z-index: 200; width: 62px; height: 62px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; box-shadow: 0 16px 34px -10px rgba(63,118,82,0.65); transition: transform 0.25s ease; }
+  .float-wa:hover { transform: scale(1.08); }
+  .float-wa svg { width: 30px; height: 30px; color: #fff; }
+
+  @media (max-width: 980px) {
+    .nav-links, .nav-cta .btn-ghost { display: none; }
+    .nav-toggle { display: flex; }
+    .related-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+  @media (max-width: 620px) {
+    .wrap { padding: 0 20px; }
+    .article-top { padding: 40px 0 0; }
+    .article-body, .article-refs, .article-cta { padding-left: 20px; padding-right: 20px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+  }
+  :focus-visible { outline: 2.5px solid var(--green); outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <a href="index.html#top" class="brand">
+      <img src="https://static.wixstatic.com/media/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png/v1/fill/w_320,h_190,al_c,q_90/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png" alt="Logo Centro Integrado Neuroevolução">
+      <span class="brand-name">Neuro<span>evolução</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#sobre">Sobre</a></li>
+      <li><a href="index.html#servicos">Serviços</a></li>
+      <li><a href="index.html#depoimentos">Avaliações</a></li>
+      <li><a href="index.html#equipe">Equipe</a></li>
+      <li><a href="blog.html" class="is-current">Blog</a></li>
+      <li><a href="index.html#contato">Contato</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="index.html#contato" class="btn btn-ghost btn-sm">Localização</a>
+      <a href="https://api.whatsapp.com/send?phone=5591991941515&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Neuroevolu%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-primary btn-sm">Agendar Consulta</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html#sobre">Sobre</a>
+  <a href="index.html#servicos">Serviços</a>
+  <a href="index.html#depoimentos">Avaliações</a>
+  <a href="index.html#equipe">Equipe</a>
+  <a href="blog.html">Blog</a>
+  <a href="index.html#contato">Contato</a>
+  <a href="https://api.whatsapp.com/send?phone=5591991941515&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Neuroevolu%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-primary">Agendar no WhatsApp</a>
+</div>
+
+<main>
+
+  <section class="article-top">
+    <div class="wrap">
+      <a class="back-link" href="blog.html">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.5 4L6 10l6.5 6"/></svg>
+        Voltar para o Blog
+      </a>
+      <div class="article-header">
+        <span class="eyebrow">Autismo</span>
+        <h1>Desmistificando o Autismo: A Ciência por Trás dos Mitos</h1>
+        <div class="post-meta" style="margin-top:22px;">
+          <span>Neuroevolução</span><span class="dot"></span><span>23 de mai. de 2025</span><span class="dot"></span><span>6 min de leitura</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p>Recentemente, compartilhei um vídeo no Instagram abordando alguns mitos comuns sobre o Transtorno do Espectro Autista (TEA). Como prometido naquele vídeo, este texto aprofunda as questões levantadas, trazendo as evidências científicas que embasaram nossa discussão. O objetivo é combater a desinformação e promover uma compreensão mais precisa e respeitosa sobre o autismo, baseada em fatos e pesquisas.</p>
+
+    <span class="myth-tag">Mito 1</span>
+    <h2 class="myth-title">Vacinas Causam Autismo</h2>
+    <p>Um dos mitos mais persistentes e prejudiciais sobre o autismo é a ideia de que vacinas, especialmente a tríplice viral (sarampo, caxumba e rubéola), podem causar o transtorno. Essa alegação é categoricamente falsa e tem sido refutada por uma vasta quantidade de estudos científicos rigorosos em todo o mundo.</p>
+    <p>A origem dessa desinformação remonta a um estudo publicado em 1998 na revista médica The Lancet por Andrew Wakefield e colegas. O estudo, que envolveu apenas 12 crianças, sugeria uma ligação entre a vacina tríplice viral e o desenvolvimento de autismo e problemas intestinais. No entanto, investigações posteriores revelaram que o estudo de Wakefield era metodologicamente falho, continha dados fraudulentos e que o próprio Wakefield tinha conflitos de interesse financeiros não declarados.</p>
+    <p>Como resultado, The Lancet retratou completamente o artigo em 2010. Wakefield perdeu sua licença médica no Reino Unido. Desde então, inúmeras pesquisas de larga escala, envolvendo milhões de crianças em diferentes países, foram conduzidas para investigar a possível ligação entre vacinas e autismo. Consistentemente, esses estudos não encontraram nenhuma evidência que apoie essa relação.</p>
+    <p>Instituições de saúde renomadas, como a Organização Mundial da Saúde (OMS), os Centros de Controle e Prevenção de Doenças (CDC) dos Estados Unidos, a Academia Americana de Pediatria e autoridades de saúde brasileiras como o Ministério da Saúde e o Instituto Butantan, reafirmam que as vacinas são seguras e não causam autismo. O Portal Gov.br, por exemplo, destaca que "não existe nenhuma relação entre vacinas e autismo" e que a pesquisa científica é clara a esse respeito. O Instituto Butantan também reforça que o artigo de 1998 foi amplamente refutado pela comunidade científica.</p>
+    <p>Outra preocupação levantada por grupos antivacina era a presença de timerosal, um conservante à base de mercúrio, em algumas vacinas. No entanto, estudos extensivos também demonstraram que o timerosal, nas quantidades usadas em vacinas, não está associado ao autismo. Além disso, o timerosal foi removido da maioria das vacinas infantis há muitos anos em diversos países, e as taxas de diagnóstico de autismo continuaram a aumentar, o que contradiz a hipótese de uma ligação causal.</p>
+    <p>É crucial entender que a vacinação é uma das intervenções de saúde pública mais eficazes, prevenindo doenças graves e salvando vidas. Associar vacinas ao autismo não apenas carece de fundamento científico, mas também coloca em risco a saúde individual e coletiva ao desencorajar a imunização.</p>
+
+    <span class="myth-tag">Mito 2</span>
+    <h2 class="myth-title">Pessoas com Autismo Não Têm Empatia</h2>
+    <p>Outro equívoco comum é a crença de que indivíduos no espectro autista são incapazes de sentir ou demonstrar empatia. Essa visão simplista e muitas vezes prejudicial ignora a complexidade da empatia e as diferentes formas como ela pode se manifestar em pessoas com TEA.</p>
+    <p>A empatia é geralmente dividida em dois componentes principais: a empatia afetiva e a empatia cognitiva. A empatia afetiva refere-se à capacidade de sentir e compartilhar as emoções dos outros – sentir tristeza quando alguém está triste, por exemplo. A empatia cognitiva, por outro lado, é a capacidade de compreender a perspectiva e o estado mental de outra pessoa – entender por que alguém está se sentindo de determinada maneira.</p>
+    <p>Pesquisas científicas, como revisões publicadas na base SciELO, sugerem que, em muitas pessoas com TEA, a empatia afetiva pode estar intacta ou até mesmo ser mais intensa do que na população neurotípica. Indivíduos autistas podem sentir profundamente as emoções alheias, mas podem ter dificuldades em processar, regular ou expressar essas emoções de maneira convencional. O que pode ser desafiador para algumas pessoas no espectro é a empatia cognitiva. Dificuldades na Teoria da Mente (a capacidade de atribuir estados mentais a si mesmo e aos outros) podem tornar mais complexo inferir os pensamentos, intenções e sentimentos de outras pessoas, especialmente em situações sociais sutis ou ambíguas.</p>
+    <p>Além disso, o conceito de "Dupla Empatia", proposto pelo sociólogo autista Damian Milton, oferece uma perspectiva importante. Essa teoria sugere que as dificuldades de comunicação e compreensão entre pessoas autistas e não autistas não são um déficit unilateral dos autistas, mas sim uma quebra mútua de entendimento. Pessoas neurotípicas também podem ter dificuldade em compreender a perspectiva e a experiência de uma pessoa autista. Portanto, rotular pessoas com TEA como carentes de empatia é impreciso e ignora as barreiras de comunicação bidirecionais.</p>
+    <p>É fundamental reconhecer que a expressão da empatia pode variar significativamente entre indivíduos, sejam eles autistas ou não. Muitos autistas demonstram grande compaixão e preocupação pelos outros, embora possam expressá-la de maneiras diferentes das esperadas pela sociedade neurotípica. Reduzir a experiência autista a uma suposta falta de empatia é um estereótipo que contribui para o estigma e a incompreensão.</p>
+
+    <span class="myth-tag">Mito 3</span>
+    <h2 class="myth-title">Nem Todos os Autistas São Gênios (Síndrome de Savant é Rara)</h2>
+    <p>A representação de pessoas autistas na mídia frequentemente as retrata como gênios com habilidades extraordinárias em áreas específicas, como matemática, música ou memória – um fenômeno conhecido como Síndrome de Savant. Embora seja verdade que algumas pessoas no espectro autista possuam essas habilidades excepcionais, essa não é a realidade para a maioria.</p>
+    <p>Estudos e especialistas indicam que a Síndrome de Savant ocorre em uma porcentagem relativamente pequena de indivíduos com TEA, estimada por alguns em cerca de 10%, embora as estimativas possam variar. A maioria das pessoas autistas possui uma gama de habilidades e níveis de inteligência que variam amplamente, assim como na população neurotípica. Alguns podem ter deficiência intelectual associada, enquanto outros têm inteligência média ou acima da média, sem necessariamente apresentar habilidades savant.</p>
+    <p>Sites como Brain Support e artigos de fontes como CEAM Brasil desmistificam essa generalização, explicando que o "genialismo" é uma característica de uma parcela limitada de pessoas com TEA. Focar excessivamente nessas habilidades excepcionais pode criar expectativas irreais e ofuscar as dificuldades reais que muitas pessoas autistas enfrentam em áreas como comunicação social, processamento sensorial e funções executivas. Além disso, essa visão estereotipada ignora os talentos e pontos fortes mais comuns e diversos que as pessoas autistas podem ter.</p>
+    <p>É essencial reconhecer a heterogeneidade do espectro autista. Cada pessoa é única, com seu próprio conjunto de desafios e potencialidades. Reduzir o autismo ao estereótipo do "gênio excêntrico" é simplista e desconsidera a vasta diversidade de experiências dentro da comunidade autista.</p>
+
+    <span class="myth-tag">Mito 4</span>
+    <h2 class="myth-title">Autismo Não é Doença, e Sim uma Forma Diferente de Ver o Mundo</h2>
+    <p>Finalmente, abordamos a concepção do autismo. É fundamental entender que o Transtorno do Espectro Autista (TEA) não é uma doença no sentido tradicional, como uma infecção ou uma condição degenerativa que precisa ser "curada". O TEA é classificado como um transtorno do neurodesenvolvimento.</p>
+    <p>Isso significa que o cérebro de uma pessoa autista se desenvolve de maneira diferente desde a primeira infância, resultando em variações na forma como ela processa informações, interage socialmente, comunica-se e percebe o mundo. Como destacado por fontes como Genial Care e a Secretaria de Saúde do Paraná, não existe uma "cura" para o autismo porque ele não é uma doença a ser erradicada, mas sim uma parte intrínseca da identidade e do funcionamento neurológico do indivíduo.</p>
+    <p>As evidências científicas atuais, conforme apontado pelo Ministério da Saúde e pela Organização Pan-Americana da Saúde (OPAS/OMS), indicam que o TEA tem causas complexas e multifatoriais, envolvendo uma interação entre fatores genéticos e ambientais. Não se trata de algo adquirido ou causado por fatores externos como vacinas ou criação.</p>
+    <p>O movimento da neurodiversidade, discutido em artigos como o da SciELO, defende que condições neurológicas como o autismo, TDAH, dislexia, entre outras, são variações naturais da neurologia humana, e não déficits ou patologias. Sob essa perspectiva, o autismo é visto como uma forma diferente de ser e de experimentar o mundo, com seus próprios desafios e pontos fortes, e não como algo que precise ser eliminado. O foco deve ser em fornecer apoio, acomodações e respeito para que as pessoas autistas possam prosperar, em vez de tentar "consertá-las" ou torná-las neurotípicas.</p>
+    <p>Compreender o autismo como uma diferença neurológica, e não como uma doença, é crucial para combater o estigma e promover a inclusão e aceitação.</p>
+
+    <h2>Conclusão: Informação como Ferramenta de Inclusão</h2>
+    <p>Como vimos neste texto, que complementa nosso vídeo no Instagram, muitos dos mitos que cercam o Transtorno do Espectro Autista não resistem a uma análise baseada em evidências científicas. Vacinas não causam autismo; a empatia em pessoas autistas é complexa e não ausente; a genialidade é rara, não a regra; e o autismo é uma condição do neurodesenvolvimento, não uma doença a ser curada.</p>
+    <p>Combater a desinformação com conhecimento científico e respeito pelas experiências vividas é fundamental para construir uma sociedade mais inclusiva e acolhedora para todas as pessoas, independentemente de sua configuração neurológica. Esperamos que este material sirva como um recurso valioso para desmistificar o TEA e promover uma compreensão mais profunda e empática.</p>
+  </article>
+
+  <div class="article-refs">
+    <h2>Referências</h2>
+
+    <h3>Vacinas e Autismo</h3>
+    <ul>
+      <li>Portal Gov.br (Saúde): gov.br/saude/pt-br/assuntos/saude-com-ciencia/noticias/2024/abril/nao-existe-nenhuma-relacao-entre-vacinas-e-autismo</li>
+      <li>Instituto Butantan: butantan.gov.br/covid/butantan-tira-duvida/tira-duvida-noticias/por-que-e-mentira-que-vacinas-causam-autismo-conheca-a-historia-por-tras-desse-mito</li>
+      <li>Autismo e Realidade: autismoerealidade.org.br/2021/01/15/a-historia-por-tras-do-mito-de-que-vacinas-causam-autismo</li>
+      <li>Família SBIm: familia.sbim.org.br/duvidas/mitos/o-mercurio-presente-nas-vacinas-causa-autismo</li>
+      <li>BBC: bbc.com/portuguese/geral-40663622</li>
+    </ul>
+
+    <h3>Empatia no Autismo</h3>
+    <ul>
+      <li>SciELO (Revisão Empatia Afetiva e Cognitiva): scielo.br/j/rbee/a/dbpyTntTvDNSFmy7wybdxjg</li>
+      <li>Canal Autismo (Teoria da Dupla Empatia): canalautismo.com.br/artigos/teoria-da-dupla-empatia</li>
+      <li>CEAM Brasil: ceambrasil.com.br/2025/04/07/mitos-e-verdades-sobre-o-autismo-informacao-que-acolhe</li>
+    </ul>
+
+    <h3>Autismo e Genialidade (Síndrome de Savant)</h3>
+    <ul>
+      <li>Brain Support: brainsupport.com.br/blog/todos-os-autistas-sao-genios/1850</li>
+      <li>Genial Care (Superdotação): genialcare.com.br/blog/superdotacao-no-autismo</li>
+      <li>UOL VivaBem: uol.com.br/vivabem/noticias/redacao/2018/04/28/vacina-causa-autismo-todo-autista-e-genio-veja-mitos-sobre-a-condicao.htm</li>
+    </ul>
+
+    <h3>Autismo Não é Doença (Neurodiversidade)</h3>
+    <ul>
+      <li>Genial Care: genialcare.com.br/blog/autismo-e-doenca</li>
+      <li>Secretaria de Saúde do Paraná: saude.pr.gov.br/Pagina/Transtorno-do-Espectro-Autista-TEA</li>
+      <li>G1 Ciência e Saúde: g1.globo.com/ciencia-e-saude/noticia/2020/02/16/autismo-as-descobertas-recentes-que-ajudam-a-derrubar-mitos-sobre-o-transtorno.ghtml</li>
+      <li>SciELO (Neurodiversidade e Estigma): scielo.br/j/pee/a/S5FdcTLWS9bPdJwPXcdmnHz</li>
+      <li>Portal Gov.br (Linhas de Cuidado): linhasdecuidado.saude.gov.br/portal/transtorno-do-espectro-autista/definicao-tea</li>
+      <li>OPAS/OMS: paho.org/pt/topicos/transtorno-do-espectro-autista</li>
+    </ul>
+  </div>
+
+  <div class="article-cta">
+    <div class="article-cta-inner reveal">
+      <span class="eyebrow" style="justify-content:center; color: var(--green-light);">Ficou com alguma dúvida?</span>
+      <h3>Fale direto com a nossa equipe.</h3>
+      <p>Se você suspeita de TEA em você ou em alguém da família, o primeiro passo é uma avaliação profissional.</p>
+      <a href="https://api.whatsapp.com/send?phone=5591991941515&text=Ol%C3%A1%2C%20li%20o%20artigo%20sobre%20Autismo%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" class="btn btn-primary">Falar no WhatsApp</a>
+    </div>
+  </div>
+
+  <section class="related">
+    <div class="wrap">
+      <span class="eyebrow">Continue lendo</span>
+      <h2>Outros artigos do blog</h2>
+      <div class="related-grid">
+        <a class="related-card" href="blog-psicoterapia-de-grupo.html">
+          <div class="post-meta"><span>17 de fev.</span><span class="dot"></span><span>5 min</span></div>
+          <h3>Psicoterapia de Grupo: Um Método Terapêutico Avançado e Sua Eficácia Comprovada</h3>
+        </a>
+        <a class="related-card" href="blog-avaliacao-neuropsicologica-motivos-urgencia.html">
+          <div class="post-meta"><span>30 de jul. de 2025</span><span class="dot"></span><span>11 min</span></div>
+          <h3>A Importância da Avaliação Neuropsicológica: Motivos, Sinais de Urgência e Consequências da Omissão</h3>
+        </a>
+        <a class="related-card" href="blog-avaliacao-neuropsicologica-o-que-e.html">
+          <div class="post-meta"><span>24 de abr. de 2025</span><span class="dot"></span><span>1 min</span></div>
+          <h3>Avaliação Neuropsicológica: o que é, para que serve e quando procurar?</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="https://static.wixstatic.com/media/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png/v1/fill/w_260,h_155,al_c,q_90/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png" alt="Logo Neuroevolução">
+          <span>Neuroevolução</span>
+        </div>
+        <p class="tagline">Centro integrado de neuropsicologia, terapias e desenvolvimento em Belém-PA. Cuidado humanizado, em cada etapa do seu caminho.</p>
+        <div class="social-row" style="margin-top:22px;">
+          <a href="https://www.instagram.com/clinicaneuroevolucao" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5591991941515" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Especialidades</h4>
+        <ul>
+          <li><a href="index.html#avaliacao-neuropsicologica">Avaliação Neuropsicológica</a></li>
+          <li><a href="index.html#psicoterapia-infantil">Psicoterapia Infantil</a></li>
+          <li><a href="index.html#psicoterapia-adulto">Psicoterapia Adulto</a></li>
+          <li><a href="index.html#terapia-aba-infantil">Terapia ABA</a></li>
+          <li><a href="index.html#psicopedagogia">Psicopedagogia</a></li>
+          <li><a href="index.html#terapia-ocupacional">Terapia Ocupacional</a></li>
+          <li><a href="index.html#fonoaudiologia">Fonoaudiologia</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Clínica</h4>
+        <ul>
+          <li><a href="index.html#sobre">Sobre nós</a></li>
+          <li><a href="index.html#equipe">Nossa equipe</a></li>
+          <li><a href="index.html#depoimentos">Avaliações</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#contato">Localização</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://api.whatsapp.com/send?phone=5591991941515" target="_blank" rel="noopener">(91) 99194-1515</a></li>
+          <li><a href="mailto:contato@neuroevolucao.com.br">contato@neuroevolucao.com.br</a></li>
+          <li><a href="https://maps.app.goo.gl/tX2ECNc2Rp4XS5uG8" target="_blank" rel="noopener">Umarizal, Belém-PA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Centro Integrado Neuroevolução. Todos os direitos reservados.</span>
+      <span>Belém, Pará</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://api.whatsapp.com/send?phone=5591991941515&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Neuroevolu%C3%A7%C3%A3o." target="_blank" rel="noopener" class="float-wa" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.1 7c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2 1 1-3.1-.2-.3C3.5 15 3 13.5 3 12c0-4.9 4-8.9 9-8.9s9 4 9 8.9-4 9.2-9 9.2z"/></svg>
+</a>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const drawer = document.getElementById('mobileDrawer');
+  navToggle.addEventListener('click', () => {
+    const open = drawer.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    drawer.classList.remove('open');
+    navToggle.classList.remove('open');
+  }));
+</script>
+
+</body>
+</html>

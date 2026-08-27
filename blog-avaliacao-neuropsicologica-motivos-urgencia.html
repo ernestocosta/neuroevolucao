@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Importância da Avaliação Neuropsicológica | Neuroevolução</title>
+<meta name="description" content="Motivos para realizar uma avaliação neuropsicológica, sinais clínicos em crianças e adultos, níveis de urgência e os riscos do diagnóstico tardio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,560;0,9..144,650;1,9..144,450;1,9..144,560&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F3EC; --bg-alt: #EFE7F2; --surface: #FFFFFF;
+    --ink: #241A30; --ink-soft: #5B5266; --ink-faint: #8A8194;
+    --plum: #241A30; --plum-2: #3D2C52;
+    --green: #3F7652; --green-deep: #2E5A3E; --green-light: #78B685; --green-pale: #E4EFE6;
+    --border: rgba(36,26,48,0.12); --shadow: 0 30px 60px -30px rgba(36,26,48,0.35); --radius: 22px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1B1420; --bg-alt: #241A30; --surface: #2A2033;
+      --ink: #F5F0EA; --ink-soft: #C7BECF; --ink-faint: #948BA0;
+      --green: #6FB584; --green-deep: #8FCB9F; --green-light: #8FCB9F; --green-pale: rgba(120,182,133,0.16);
+      --border: rgba(245,240,234,0.14); --shadow: 0 30px 60px -30px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1B1420; --bg-alt: #241A30; --surface: #2A2033;
+    --ink: #F5F0EA; --ink-soft: #C7BECF; --ink-faint: #948BA0;
+    --green: #6FB584; --green-deep: #8FCB9F; --green-light: #8FCB9F; --green-pale: rgba(120,182,133,0.16);
+    --border: rgba(245,240,234,0.14); --shadow: 0 30px 60px -30px rgba(0,0,0,0.6);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; font-weight: 560; line-height: 1.15; margin: 0; color: var(--ink); letter-spacing: -0.01em; }
+  p { margin: 0; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  button { font-family: inherit; cursor: pointer; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-deep); }
+  .eyebrow::before { content: ""; width: 26px; height: 1.5px; background: var(--green); display: inline-block; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 30px; border-radius: 100px; font-weight: 700; font-size: 0.95rem; border: 1.5px solid transparent; transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease; white-space: nowrap; }
+  .btn-primary { background: var(--green); color: #fff; box-shadow: 0 16px 32px -14px rgba(63,118,82,0.65); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 38px -14px rgba(63,118,82,0.75); background: var(--green-deep); }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--border); }
+  .btn-ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .btn-sm { padding: 11px 20px; font-size: 0.82rem; }
+  .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+  header { position: sticky; top: 0; z-index: 100; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { height: 40px; width: auto; }
+  .brand-name { font-family: 'Fraunces', serif; font-weight: 650; font-size: 1.08rem; color: var(--ink); letter-spacing: -0.01em; }
+  .brand-name span { color: var(--green); }
+  .nav-links { display: flex; align-items: center; gap: 34px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a { font-size: 0.92rem; font-weight: 600; color: var(--ink-soft); transition: color 0.2s ease; }
+  .nav-links a:hover, .nav-links a.is-current { color: var(--ink); }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .nav-toggle { display: none; background: none; border: none; width: 40px; height: 40px; align-items: center; justify-content: center; }
+  .nav-toggle span, .nav-toggle::before, .nav-toggle::after { content: ""; display: block; width: 22px; height: 2px; background: var(--ink); position: relative; transition: transform 0.25s ease, opacity 0.25s ease; }
+  .nav-toggle::before { position: absolute; transform: translateY(-7px); }
+  .nav-toggle::after { position: absolute; transform: translateY(7px); }
+  .nav-toggle.open span { opacity: 0; }
+  .nav-toggle.open::before { transform: rotate(45deg); }
+  .nav-toggle.open::after { transform: rotate(-45deg); }
+  .mobile-drawer { position: fixed; inset: 0; z-index: 150; background: var(--bg); display: flex; flex-direction: column; padding: 100px 32px 40px; gap: 26px; transform: translateX(100%); transition: transform 0.35s ease; }
+  .mobile-drawer.open { transform: translateX(0); }
+  .mobile-drawer a { font-family: 'Fraunces', serif; font-size: 1.7rem; font-weight: 560; }
+  .mobile-drawer .btn { margin-top: 12px; align-self: flex-start; }
+
+  section { position: relative; padding: 0; }
+  .article-top { padding: 56px 0 0; }
+  .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.88rem; font-weight: 600; color: var(--ink-soft); }
+  .back-link:hover { color: var(--ink); }
+  .back-link svg { width: 15px; height: 15px; }
+  .article-header { max-width: 780px; margin: 28px auto 0; }
+  .article-header h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin-top: 16px; }
+  .post-meta { display: flex; align-items: center; gap: 14px; font-size: 0.82rem; color: var(--ink-faint); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; flex-wrap: wrap; }
+  .post-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--ink-faint); }
+  .article-body { max-width: 720px; margin: 0 auto; padding: 48px 28px 0; }
+  .article-body > p { color: var(--ink-soft); font-size: 1.08rem; line-height: 1.85; margin-top: 22px; }
+  .article-body h2 { font-size: 1.55rem; margin-top: 52px; }
+  .article-body h3 { font-size: 1.14rem; margin-top: 34px; color: var(--green-deep); }
+  .article-body ul, .article-body ol { margin-top: 18px; padding-left: 22px; color: var(--ink-soft); display: flex; flex-direction: column; gap: 12px; }
+  .article-body li { line-height: 1.75; font-size: 1.02rem; }
+  .article-body li::marker { color: var(--green-deep); font-weight: 700; }
+  .article-body strong { color: var(--ink); font-weight: 700; }
+
+  .summary-box { background: var(--green-pale); border-radius: 16px; padding: 26px 28px; margin-top: 28px; }
+  .summary-box .label { font-weight: 700; color: var(--green-deep); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 10px; }
+  .summary-box p { margin-top: 0 !important; color: var(--ink) !important; font-size: 1rem !important; line-height: 1.75 !important; }
+
+  .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; margin-top: 32px; }
+  .toc .label { font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); display: block; margin-bottom: 12px; }
+  .toc ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+  .toc li { font-size: 0.92rem; }
+  .toc a { color: var(--ink-soft); font-weight: 600; }
+  .toc a:hover { color: var(--green-deep); }
+
+  .level-card { border: 1px solid var(--border); border-left: 5px solid var(--level-color, var(--green)); border-radius: 16px; padding: 24px 26px; margin-top: 20px; background: var(--surface); }
+  .level-card .level-head { display: flex; align-items: center; gap: 12px; }
+  .level-card .level-num { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: var(--level-color, var(--green)); color: #fff; font-weight: 700; font-size: 0.9rem; font-family: 'Fraunces', serif; flex-shrink: 0; }
+  .level-card h3 { margin: 0; color: var(--ink); font-size: 1.05rem; }
+  .level-card p { margin-top: 14px !important; font-size: 0.98rem !important; }
+  .level-card p .who { color: var(--green-deep); font-weight: 700; }
+
+  .article-refs { max-width: 720px; margin: 56px auto 0; padding: 0 28px; }
+  .article-refs h2 { font-size: 1.2rem; }
+  .article-refs ol { margin-top: 18px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+  .article-refs li { font-size: 0.82rem; color: var(--ink-faint); line-height: 1.6; word-break: break-word; }
+
+  .article-cta { max-width: 720px; margin: 56px auto 0; padding: 0 28px 80px; }
+  .article-cta-inner { background: var(--plum); border-radius: 24px; padding: 40px; text-align: center; color: #F5F0EA; }
+  .article-cta-inner h3 { color: #F5F0EA; font-size: 1.3rem; }
+  .article-cta-inner p { color: rgba(245,240,234,0.75); margin-top: 12px; font-size: 0.95rem; }
+  .article-cta-inner .btn { margin-top: 22px; }
+
+  .related { background: var(--bg-alt); padding: 64px 0 80px; margin-top: 0; }
+  .related .wrap > .eyebrow { justify-content: center; display: flex; }
+  .related h2 { text-align: center; margin-top: 14px; font-size: 1.6rem; }
+  .related-grid { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 24px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .related-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .related-card .post-meta { font-size: 0.72rem; }
+  .related-card h3 { font-size: 1rem; margin-top: 10px; line-height: 1.35; }
+
+  footer { background: var(--plum); color: rgba(245,240,234,0.7); padding: 64px 0 28px; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 44px; border-bottom: 1px solid rgba(245,240,234,0.12); }
+  .footer-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .footer-brand img { height: 36px; }
+  .footer-brand span { font-family: 'Fraunces', serif; font-weight: 650; color: #F5F0EA; font-size: 1.05rem; }
+  footer p.tagline { max-width: 30ch; font-size: 0.92rem; line-height: 1.6; }
+  .footer-col h4 { color: #F5F0EA; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; margin-bottom: 18px; font-family: 'Inter', sans-serif; }
+  .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .footer-col a { font-size: 0.92rem; transition: color 0.2s ease; }
+  .footer-col a:hover { color: #F5F0EA; }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 26px; font-size: 0.82rem; flex-wrap: wrap; gap: 12px; }
+  .social-row { display: flex; gap: 12px; }
+  .social-row a { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(245,240,234,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s ease, border-color 0.2s ease; }
+  .social-row a:hover { background: var(--green); border-color: var(--green); }
+  .social-row svg { width: 17px; height: 17px; }
+
+  .float-wa { position: fixed; right: 22px; bottom: 22px; z-index: 200; width: 62px; height: 62px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; box-shadow: 0 16px 34px -10px rgba(63,118,82,0.65); transition: transform 0.25s ease; }
+  .float-wa:hover { transform: scale(1.08); }
+  .float-wa svg { width: 30px; height: 30px; color: #fff; }
+
+  @media (max-width: 980px) {
+    .nav-links, .nav-cta .btn-ghost { display: none; }
+    .nav-toggle { display: flex; }
+    .related-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+  @media (max-width: 620px) {
+    .wrap { padding: 0 20px; }
+    .article-top { padding: 40px 0 0; }
+    .article-body, .article-refs, .article-cta { padding-left: 20px; padding-right: 20px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+  }
+  :focus-visible { outline: 2.5px solid var(--green); outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <a href="index.html#top" class="brand">
+      <img src="https://static.wixstatic.com/media/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png/v1/fill/w_320,h_190,al_c,q_90/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png" alt="Logo Centro Integrado Neuroevolução">
+      <span class="brand-name">Neuro<span>evolução</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#sobre">Sobre</a></li>
+      <li><a href="index.html#servicos">Serviços</a></li>
+      <li><a href="index.html#depoimentos">Avaliações</a></li>
+      <li><a href="index.html#equipe">Equipe</a></li>
+      <li><a href="blog.html" class="is-current">Blog</a></li>
+      <li><a href="index.html#contato">Contato</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="index.html#contato" class="btn btn-ghost btn-sm">Localização</a>
+      <a href="https://api.whatsapp.com/send?phone=5591991941515&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Neuroevolu%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-primary btn-sm">Agendar Consulta</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html#sobre">Sobre</a>
+  <a href="index.html#servicos">Serviços</a>
+  <a href="index.html#depoimentos">Avaliações</a>
+  <a href="index.html#equipe">Equipe</a>
+  <a href="blog.html">Blog</a>
+  <a href="index.html#contato">Contato</a>
+  <a href="https://api.whatsapp.com/send?phone=5591991941515&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Neuroevolu%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-primary">Agendar no WhatsApp</a>
+</div>
+
+<main>
+
+  <section class="article-top">
+    <div class="wrap">
+      <a class="back-link" href="blog.html">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.5 4L6 10l6.5 6"/></svg>
+        Voltar para o Blog
+      </a>
+      <div class="article-header">
+        <span class="eyebrow">Avaliação Neuropsicológica</span>
+        <h1>A Importância da Avaliação Neuropsicológica: Motivos, Sinais de Urgência e Consequências da Omissão</h1>
+        <div class="post-meta" style="margin-top:22px;">
+          <span>Neuroevolução</span><span class="dot"></span><span>30 de jul. de 2025</span><span class="dot"></span><span>11 min de leitura</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <article class="article-body">
+
+    <div class="summary-box">
+      <span class="label">Resumo</span>
+      <p>A avaliação neuropsicológica é uma ferramenta diagnóstica essencial para compreender o funcionamento cognitivo, emocional e comportamental de indivíduos em diversas faixas etárias. Este artigo explora os principais motivos para a realização de uma avaliação neuropsicológica, detalha os sinais clínicos que indicam a necessidade desse procedimento em crianças e adultos, e propõe uma escala de níveis de urgência para o encaminhamento. Além disso, discute os perigos e as consequências da omissão e do diagnóstico tardio, enfatizando a importância da intervenção precoce baseada em evidências científicas.</p>
+    </div>
+
+    <div class="toc">
+      <span class="label">Neste artigo</span>
+      <ol>
+        <li><a href="#intro">Introdução</a></li>
+        <li><a href="#motivos">Motivos para a realização</a></li>
+        <li><a href="#sinais">Sinais clínicos</a></li>
+        <li><a href="#urgencia">Níveis de urgência (0–5)</a></li>
+        <li><a href="#perigos">Perigos da omissão</a></li>
+        <li><a href="#evidencias">Evidências científicas</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+      </ol>
+    </div>
+
+    <h2 id="intro">1. Introdução</h2>
+    <p>A neuropsicologia, campo que integra a neurologia e a psicologia, dedica-se ao estudo da relação entre o cérebro e o comportamento. A avaliação neuropsicológica, por sua vez, é um processo sistemático que utiliza testes padronizados e técnicas clínicas para investigar as funções cerebrais e suas manifestações no comportamento, emoções e cognição. Este procedimento é fundamental para auxiliar no diagnóstico diferencial de diversas condições neurológicas e psiquiátricas, bem como para guiar planos de tratamento e reabilitação. A demanda por avaliações neuropsicológicas tem crescido exponencialmente, refletindo a crescente compreensão da complexidade das interações cérebro-comportamento e a necessidade de abordagens diagnósticas mais precisas.</p>
+
+    <h2 id="motivos">2. Motivos para a Realização da Avaliação Neuropsicológica</h2>
+    <p>A avaliação neuropsicológica é indicada em uma variedade de situações, principalmente quando há suspeita de disfunções cognitivas que impactam a vida diária do indivíduo. Os principais motivos para a sua realização incluem:</p>
+
+    <h3>2.1. Auxílio Diagnóstico</h3>
+    <p>Um dos pilares da avaliação neuropsicológica é seu papel como exame auxiliar no diagnóstico diferencial de diversas condições. Ela permite confirmar ou descartar hipóteses diagnósticas, fornecendo um perfil detalhado das funções cognitivas e comportamentais. Isso é crucial para condições como Deficiência Intelectual, Transtorno do Déficit de Atenção e Hiperatividade (TDAH), Distúrbios de Aprendizagem (Dislexia, Discalculia, Disgrafia, Dislalia) e diferentes tipos de demências, incluindo a Doença de Alzheimer e a Doença de Parkinson. A avaliação ajuda a distinguir entre condições com sintomas sobrepostos, garantindo um diagnóstico mais preciso e, consequentemente, um plano de tratamento mais eficaz.</p>
+
+    <h3>2.2. Avaliação Pré e Pós-Cirúrgica</h3>
+    <p>Em contextos neurocirúrgicos, a avaliação neuropsicológica desempenha um papel vital tanto no período pré-operatório quanto no pós-operatório. Antes da cirurgia, ela auxilia na compreensão dos domínios cognitivos que podem ser afetados pelo procedimento, permitindo um planejamento mais seguro e a identificação de riscos potenciais. Após a cirurgia, a comparação do desempenho cognitivo antes e depois da intervenção permite monitorar a recuperação, identificar novas dificuldades e ajustar as estratégias de reabilitação.</p>
+
+    <h3>2.3. Estabelecimento de Metas para Reabilitação</h3>
+    <p>Para pacientes com condições neurológicas ou psiquiátricas que resultam em limitações cognitivas, a avaliação neuropsicológica é fundamental para identificar as potencialidades e dificuldades específicas. Com base nesse perfil, é possível estabelecer metas realistas e direcionar as intervenções de reabilitação, visando restaurar funções comprometidas ou desenvolver estratégias compensatórias para minimizar o impacto das limitações na vida diária.</p>
+
+    <h3>2.4. Monitoramento da Evolução do Quadro Clínico</h3>
+    <p>Além do diagnóstico inicial, a avaliação neuropsicológica permite monitorar a intensidade dos distúrbios cognitivos ao longo do tempo. Isso é particularmente relevante para doenças neurodegenerativas, como o Alzheimer, onde a avaliação periódica pode acompanhar a progressão da doença e a eficácia das intervenções terapêuticas. Da mesma forma, em processos de reabilitação, a avaliação contínua permite ajustar as estratégias e verificar o progresso do paciente.</p>
+
+    <h2 id="sinais">3. Sinais Clínicos que Indicam a Necessidade de Avaliação Neuropsicológica</h2>
+    <p>A identificação precoce de sinais e sintomas é crucial para o encaminhamento oportuno à avaliação neuropsicológica. Embora os sinais possam variar significativamente entre crianças e adultos, eles geralmente refletem dificuldades nas funções cognitivas, emocionais e comportamentais.</p>
+
+    <h3>3.1. Sinais em Crianças</h3>
+    <p>Em crianças, as manifestações de disfunções neuropsicológicas podem ser observadas em diversos contextos, como o escolar, familiar e social. Os principais sinais incluem:</p>
+    <ul>
+      <li><strong>Problemas Emocionais com Sintomas Físicos:</strong> Enurese (xixi) ou encoprese (fezes) na cama ou em locais inadequados após os 2 anos de idade, problemas intestinais sem causa fisiológica aparente, problemas para dormir (pesadelos frequentes), e dificuldades no aprendizado da fala ou do andar após os 18 meses de idade.</li>
+      <li><strong>Problemas com a Alimentação:</strong> Dificuldades significativas para se alimentar ou, inversamente, comportamentos de compulsão alimentar.</li>
+      <li><strong>Timidez em Excesso:</strong> Dificuldades acentuadas em se socializar com colegas, professores e até mesmo familiares próximos, que podem limitar o desenvolvimento social.</li>
+      <li><strong>Agressividade, Impaciência e Intolerância com Regras:</strong> Comportamentos como intolerância, dificuldade em lidar com o "não", agressividade excessiva com outras pessoas, mentiras frequentes ou pequenos furtos. Esses sinais podem levantar a hipótese de Transtorno Opositivo Desafiador (TOD).</li>
+      <li><strong>Dificuldades de Aprendizagem:</strong> Queixas frequentes de dificuldades no aprendizado de conteúdos escolares (Português e Matemática), seja na escrita, leitura ou fala. Manifestações específicas incluem Dislexia (leitura), Dislalia (fala), Disgrafia (escrita) e Discalculia (cálculos). Essas dificuldades podem ter forte relação com aspectos emocionais e psicológicos, necessitando de avaliação e acompanhamento neuropsicológico e psicopedagógico especializado.</li>
+      <li><strong>Agitação e Falta de Capacidade de se Concentrar:</strong> Hiperatividade, desatenção, esquecimentos ou perda de interesse constantes. Esses são sinais comuns que podem indicar a existência de Transtorno de Déficit de Atenção com Hiperatividade (TDAH). É crucial que pais e responsáveis busquem ajuda profissional quando esses comportamentos causam prejuízos significativos na rotina escolar e familiar da criança.</li>
+      <li><strong>Manias ou Fobias:</strong> Comportamentos repetitivos como roer unhas, piscar os olhos frequentemente, ou padrões de movimentos involuntários (comer roupas ou objetos, cortar ou arrancar fios de cabelo, provocar pequenos machucados). A repetição de padrões em gestos e comportamentos ou prejuízos no contato social e interações podem indicar Transtorno do Espectro Autista (TEA). Medos excessivos e irracionais (fobias) também podem ser um sinal de ansiedades não trabalhadas.</li>
+      <li><strong>Mudanças Súbitas de Humor:</strong> Flutuações constantes de humor, ou a persistência de um humor específico como tristeza, raiva ou alegria. Essas mudanças podem se manifestar como irritação, choros ou birras excessivas, e sentimentos de inferioridade e pessimismo. Tais sinais, se não tratados, podem prejudicar o desenvolvimento esperado da criança em fases posteriores da vida.</li>
+      <li><strong>Outros Fatores:</strong> Doenças frequentes sem causa fisiológica aparente, mudanças de comportamento após o nascimento de irmãos, problemas emocionais decorrentes da separação dos pais, apego excessivo aos pais, e incapacidade de lidar com o luto de pessoas próximas.</li>
+    </ul>
+
+    <h3>3.2. Sinais em Adultos</h3>
+    <p>Em adultos, os sinais que indicam a necessidade de uma avaliação neuropsicológica frequentemente se manifestam como dificuldades que afetam a vida profissional, social e pessoal. Os principais incluem:</p>
+    <ul>
+      <li><strong>Dificuldades Cognitivas:</strong> Problemas de memória (esquecimento frequente de informações recentes ou importantes), dificuldade de atenção e concentração (incapacidade de manter o foco em tarefas ou conversas), e dificuldade de raciocínio (lentidão no processamento de informações, dificuldade em resolver problemas complexos).</li>
+      <li><strong>Mudanças Comportamentais:</strong> Irritabilidade excessiva, apatia (perda de interesse em atividades antes prazerosas), mudanças de humor significativas e impulsividade. Essas alterações podem impactar negativamente os relacionamentos interpessoais e a capacidade de autogestão.</li>
+      <li><strong>Outros Sinais:</strong> Dificuldade em lidar com situações complexas no trabalho ou na vida pessoal, dificuldade em tomar decisões, perda de habilidades previamente adquiridas, desorientação no tempo e espaço, problemas de linguagem (dificuldade em encontrar palavras, expressar ideias ou compreender a fala), e alterações na personalidade.</li>
+    </ul>
+
+    <h2 id="urgencia">4. Níveis de Urgência para Avaliação Neuropsicológica (0-5)</h2>
+    <p>A definição de níveis de urgência para a avaliação neuropsicológica é fundamental para a priorização dos encaminhamentos e a otimização do tempo de resposta. Embora não exista uma escala padronizada universalmente aceita de 0 a 5, a categorização a seguir é proposta com base na gravidade dos sintomas e no impacto funcional na vida do indivíduo, tanto em crianças quanto em adultos. Esta escala visa auxiliar profissionais de saúde na tomada de decisão sobre a necessidade e o tempo de realização da avaliação.</p>
+
+    <div class="level-card" style="--level-color:#3F7652;">
+      <div class="level-head"><span class="level-num">0</span><h3>Não Urgente (Acompanhamento e Observação)</h3></div>
+      <p>Neste nível, os sinais são leves e pontuais, com pouco ou nenhum impacto significativo na funcionalidade diária do indivíduo. A recomendação é de acompanhamento e observação contínua.</p>
+      <p><span class="who">Crianças:</span> Queixas leves e pontuais de dificuldades de atenção ou memória que não impactam significativamente o desempenho escolar ou social. Pequenas variações de humor sem prejuízo funcional. Comportamentos considerados típicos para a idade, como birras ocasionais ou timidez leve.</p>
+      <p><span class="who">Adultos:</span> Queixas subjetivas de esquecimento ou lentidão mental que não afetam as atividades diárias, trabalho ou relacionamentos. Pequenas flutuações de humor sem impacto funcional. Preocupações leves com o envelhecimento normal.</p>
+    </div>
+
+    <div class="level-card" style="--level-color:#6B9C4F;">
+      <div class="level-head"><span class="level-num">1</span><h3>Baixa Urgência (Avaliação Eletiva)</h3></div>
+      <p>Os sinais são persistentes, mas ainda não causam grande sofrimento ou disfunção. A avaliação é recomendada, mas pode ser agendada sem grande pressa.</p>
+      <p><span class="who">Crianças:</span> Dificuldades persistentes em uma área específica (ex: leitura, escrita, matemática) que começam a gerar preocupação, mas ainda sem grande impacto no desempenho escolar geral. Dificuldade moderada de concentração em tarefas que exigem maior esforço. Timidez acentuada que limita algumas interações sociais, mas não impede o desenvolvimento. Sinais leves de ansiedade ou tristeza que são observados, mas a criança ainda consegue funcionar bem na maioria dos contextos.</p>
+      <p><span class="who">Adultos:</span> Queixas de memória ou atenção que são percebidas pelo indivíduo e/ou familiares, mas que ainda permitem a manutenção das atividades profissionais e sociais com adaptações. Dificuldade em aprender novas habilidades ou informações. Alterações de humor que são notadas, mas que não levam a prejuízos significativos na vida diária. Suspeita de TDAH ou outras condições neuropsicológicas que não causam grande sofrimento ou disfunção.</p>
+    </div>
+
+    <div class="level-card" style="--level-color:#C9A227;">
+      <div class="level-head"><span class="level-num">2</span><h3>Urgência Moderada (Avaliação Recomendada)</h3></div>
+      <p>Os sinais são mais evidentes e começam a impactar a funcionalidade do indivíduo em múltiplos contextos. A avaliação é fortemente recomendada para evitar o agravamento do quadro.</p>
+      <p><span class="who">Crianças:</span> Dificuldades de aprendizagem que afetam múltiplas áreas do desempenho escolar e que persistem apesar das intervenções pedagógicas. Hiperatividade e impulsividade que causam problemas significativos na escola e em casa. Dificuldade acentuada de concentração que impede a conclusão de tarefas. Problemas comportamentais (agressividade, oposição) que geram conflitos frequentes. Sinais de TEA que começam a impactar a comunicação social e comportamentos repetitivos. Ansiedade ou depressão que interferem no sono, apetite ou participação em atividades.</p>
+      <p><span class="who">Adultos:</span> Dificuldades cognitivas (memória, atenção, raciocínio) que começam a impactar o desempenho profissional, exigindo maior esforço ou resultando em erros. Dificuldade em gerenciar finanças, planejar tarefas complexas ou manter a organização. Mudanças comportamentais (irritabilidade, apatia, desinibição) que afetam relacionamentos interpessoais. Suspeita de declínio cognitivo leve ou início de demência. Sintomas de transtornos psiquiátricos (depressão grave, transtorno bipolar, esquizofrenia) com impacto cognitivo.</p>
+    </div>
+
+    <div class="level-card" style="--level-color:#D97F35;">
+      <div class="level-head"><span class="level-num">3</span><h3>Urgência Alta (Avaliação Prioritária)</h3></div>
+      <p>Os sinais são graves e causam prejuízos significativos na autonomia e qualidade de vida do indivíduo. A avaliação deve ser priorizada para uma intervenção rápida.</p>
+      <p><span class="who">Crianças:</span> Regressão significativa no desenvolvimento de habilidades previamente adquiridas (ex: perda da fala, perda de habilidades motoras). Dificuldades de aprendizagem graves que impedem o progresso escolar. Comportamentos autolesivos ou agressão severa a outros. Crises epilépticas com impacto cognitivo. Suspeita de lesão cerebral adquirida (traumatismo craniano, AVC). Alterações neurológicas progressivas. Sinais de TEA com comprometimento grave da comunicação e interação social.</p>
+      <p><span class="who">Adultos:</span> Declínio cognitivo rápido e progressivo que impede a autonomia em atividades básicas da vida diária (higiene, alimentação, vestuário). Desorientação frequente no tempo e espaço. Incapacidade de reconhecer pessoas próximas. Mudanças de personalidade drásticas e desinibição social. Suspeita de demência avançada, tumores cerebrais, AVC recente com sequelas cognitivas graves. Dificuldades cognitivas que impedem a segurança do indivíduo (ex: esquecer o fogão ligado, perder-se em locais conhecidos).</p>
+    </div>
+
+    <div class="level-card" style="--level-color:#C85A38;">
+      <div class="level-head"><span class="level-num">4</span><h3>Urgência Muito Alta (Avaliação Imediata/Emergencial)</h3></div>
+      <p>Os sinais indicam uma situação de crise aguda, com risco iminente à saúde ou segurança do indivíduo. A avaliação deve ser realizada o mais rápido possível, em ambiente hospitalar se necessário.</p>
+      <p><span class="who">Crianças:</span> Perda súbita e grave de consciência ou habilidades cognitivas após um evento agudo (ex: traumatismo craniano grave, AVC, infecção cerebral). Coma ou estado de mínima consciência. Convulsões incontroláveis com comprometimento cognitivo agudo. Deterioração neurológica rápida e inexplicável. Necessidade de avaliação para suporte de vida ou decisões médicas urgentes.</p>
+      <p><span class="who">Adultos:</span> Perda súbita e grave de consciência ou habilidades cognitivas após um evento agudo (ex: traumatismo craniano grave, AVC, hemorragia cerebral, encefalite). Coma ou estado de mínima consciência. Delirium. Necessidade de avaliação para suporte de vida ou decisões médicas urgentes. Risco iminente à segurança do paciente ou de terceiros devido a alterações cognitivas ou comportamentais agudas (ex: agressividade incontrolável, tentativa de suicídio com base em delírios).</p>
+    </div>
+
+    <div class="level-card" style="--level-color:#B33A3A;">
+      <div class="level-head"><span class="level-num">5</span><h3>Urgência Crítica (Emergência Médica com Componente Neuropsicológico)</h3></div>
+      <p>Este nível representa uma emergência médica onde a disfunção neuropsicológica é um componente crítico da condição de risco de vida. A avaliação neuropsicológica, embora secundária à estabilização clínica, é essencial para o prognóstico e planejamento pós-crise.</p>
+      <p><span class="who">Crianças:</span> Situações de risco de vida iminente diretamente relacionadas a disfunções neuropsicológicas agudas, como status epilepticus refratário, coma prolongado com necessidade de avaliação para prognóstico neurológico, ou outras condições neurológicas agudas que exigem intervenção imediata e que podem ter impacto devastador no desenvolvimento cognitivo.</p>
+      <p><span class="who">Adultos:</span> Situações de risco de vida iminente diretamente relacionadas a disfunções neuropsicológicas agudas, como hemorragia cerebral maciça, lesão cerebral traumática com hipertensão intracraniana, ou outras condições neurológicas agudas que exigem intervenção imediata e que podem resultar em danos cerebrais irreversíveis ou morte. Necessidade de avaliação para determinar capacidade de decisão em situações de emergência médica.</p>
+    </div>
+
+    <h2 id="perigos">5. Perigos da Omissão e do Diagnóstico Tardio</h2>
+    <p>A omissão da avaliação neuropsicológica ou um diagnóstico tardio de condições neuropsicológicas pode acarretar uma série de consequências negativas significativas para o indivíduo, impactando seu desenvolvimento cognitivo, psicossocial e funcional. A intervenção precoce é crucial para otimizar o prognóstico e minimizar os prejuízos a longo prazo.</p>
+
+    <h3>5.1. Prejuízo no Desenvolvimento Funcional</h3>
+    <p>A falta de intervenções adequadas, decorrente da ausência ou atraso no diagnóstico, impede o desenvolvimento funcional de habilidades essenciais. Isso é particularmente crítico em crianças, onde o cérebro está em fase de desenvolvimento acelerado, e a plasticidade cerebral é maior. Em adultos, pode levar à perda de autonomia e funcionalidade em atividades diárias e profissionais.</p>
+
+    <h3>5.2. Impactos Cognitivos e Psicossociais Negativos</h3>
+    <p>O atraso na identificação de transtornos como o Transtorno do Espectro Autista (TEA) ou o Transtorno do Déficit de Atenção e Hiperatividade (TDAH) pode resultar em impactos cognitivos e psicossociais cada vez mais negativos e de difícil reversão. Isso inclui dificuldades persistentes de aprendizagem, problemas de relacionamento social, baixa autoestima, ansiedade e depressão.</p>
+
+    <h3>5.3. Dificuldade de Reversão de Danos</h3>
+    <p>Em muitos casos, quanto mais tardio o diagnóstico, mais consolidados estão os padrões disfuncionais e mais difícil se torna a reabilitação. A ausência de um plano de intervenção adequado no momento certo pode levar a sequelas permanentes ou de difícil manejo.</p>
+
+    <h3>5.4. Agravamento de Sintomas e Comorbidades</h3>
+    <p>Sem o diagnóstico e tratamento adequados, os sintomas podem se agravar ao longo do tempo, e novas comorbidades podem surgir. Por exemplo, dificuldades de aprendizagem não tratadas podem levar a problemas de comportamento e saúde mental secundários.</p>
+
+    <h3>5.5. Falta de Suporte Adequado</h3>
+    <p>A família e a escola (no caso de crianças) ou o ambiente de trabalho (no caso de adultos) podem não conseguir oferecer o suporte necessário sem compreender a natureza das dificuldades do indivíduo. Isso pode gerar frustração, estresse e sobrecarga para todos os envolvidos.</p>
+
+    <h3>5.6. Perda de Oportunidades</h3>
+    <p>O diagnóstico tardio pode significar a perda de oportunidades de intervenções terapêuticas, educacionais e sociais que poderiam ter um impacto significativo na qualidade de vida do indivíduo. Em alguns casos, pode até mesmo impedir o acesso a direitos e benefícios específicos.</p>
+
+    <h3>5.7. Custo Emocional e Financeiro</h3>
+    <p>O sofrimento emocional para o indivíduo e seus familiares é imenso. Além disso, a ausência de um diagnóstico pode levar a tratamentos inadequados e custos financeiros desnecessários, enquanto a condição subjacente permanece sem solução.</p>
+
+    <h2 id="evidencias">6. Evidências e Estudos Científicos</h2>
+    <p>Estudos como os citados nos resultados da pesquisa (e.g., sobre TEA e TDAH) consistentemente apontam para a importância do diagnóstico precoce. A pesquisa de Abrantes e Silva (2025) sobre o impacto do diagnóstico tardio no desenvolvimento cognitivo e psicossocial em pacientes com TEA, por exemplo, ressalta que o diagnóstico mais precoce possível é fundamental, pois foi notório os impactos cognitivos e psicossociais com atraso, resultando em impactos cada vez mais negativos e de difícil reversão de uma detecção tardia. Similarmente, estudos sobre TDAH em adultos destacam as consequências do diagnóstico tardio na vida do indivíduo, enfatizando a necessidade de intervenções adequadas para o desenvolvimento funcional de suas habilidades.</p>
+
+    <h2 id="conclusao">7. Conclusão</h2>
+    <p>A avaliação neuropsicológica é uma ferramenta indispensável na identificação e manejo de diversas condições que afetam o funcionamento cerebral. A compreensão dos motivos para sua realização, o reconhecimento dos sinais clínicos em diferentes faixas etárias e a priorização dos encaminhamentos são passos cruciais para garantir que os indivíduos recebam o suporte necessário no momento certo. A omissão ou o atraso no diagnóstico podem ter consequências devastadoras, reforçando a importância de uma abordagem proativa e baseada em evidências para a saúde neuropsicológica.</p>
+  </article>
+
+  <div class="article-refs">
+    <h2>8. Referências</h2>
+    <ol>
+      <li>Funcionalitá. O que é avaliação neuropsicológica e quando é necessária? Disponível em: funcionalita.com.br/o-que-e-avaliacao-neuropsicologica-quando-necessaria</li>
+      <li>Mancini, R. 3 Motivos Em Que A Avaliação Neuropsicológica é Indicada. Disponível em: mancinipsiquiatria.com.br/3-motivos-em-que-a-avaliacao-neuropsicologica-e-indicada</li>
+      <li>Einstein. Avaliação neuropsicológica. Disponível em: einstein.br/estrutura/centro-reabilitacao/especialidades/psicologia/avaliacao-neuropsicologica</li>
+      <li>Instituto Neurosaber. Quando solicitar uma Avaliação Neuropsicológica? Disponível em: institutoneurosaber.com.br/artigos/quando-solicitar-uma-avaliacao-neuropsicologica</li>
+      <li>Espaço Psica. Crianças: 8 Sinais de que estejam precisando de avaliação ou acompanhamento. Disponível em: espacopsica.com.br/artigos/criancas-8-sinais-de-que-estejam-precisando-de-avaliacao-ou-acompanhamento</li>
+      <li>Clínica Interagindo. Avaliação Neuropsicológica em Adultos: Entenda Quando Procurar. Disponível em: clinicainteragindo.com.br/artigos</li>
+      <li>Abrantes, E. E., &amp; Silva, A. K. A. da. (2025). Impactos do diagnóstico tardio no desenvolvimento cognitivo e psicossocial em pacientes com Transtorno do Espectro Autista (TEA). Brazilian Journal of Health Review, 8(1), 76776. Disponível em: ojs.brazilianjournals.com.br/ojs/index.php/BJHR/article/view/76776</li>
+      <li>Caixeta, M. C. S., &amp; Caixeta, C. A. S. (2024). As implicações do diagnóstico tardio do transtorno do déficit de atenção e hiperatividade (TDAH) em adultos e as intervenções necessárias no processo. Brazilian Journal of Integrated Health Sciences, 8(1), 2863. Disponível em: bjihs.emnuvens.com.br/bjihs/article/view/2863</li>
+      <li>Souza, L., &amp; Albuquerque, F. (2023). Dificuldades e consequências do diagnóstico tardio de TDAH: revisão integrativa. Revista Contemporânea, 1(1), 955.</li>
+    </ol>
+  </div>
+
+  <div class="article-cta">
+    <div class="article-cta-inner reveal">
+      <span class="eyebrow" style="justify-content:center; color: var(--green-light);">Reconheceu algum desses sinais?</span>
+      <h3>Não espere o diagnóstico tardio.</h3>
+      <p>A primeira sessão de Avaliação Neuropsicológica é sem custo. Fale com a nossa equipe.</p>
+      <a href="https://api.whatsapp.com/send?phone=5591991941515&text=Ol%C3%A1%2C%20li%20o%20artigo%20sobre%20a%20import%C3%A2ncia%20da%20Avalia%C3%A7%C3%A3o%20Neuropsicol%C3%B3gica%20e%20gostaria%20de%20agendar." target="_blank" rel="noopener" class="btn btn-primary">Falar no WhatsApp</a>
+    </div>
+  </div>
+
+  <section class="related">
+    <div class="wrap">
+      <span class="eyebrow">Continue lendo</span>
+      <h2>Outros artigos do blog</h2>
+      <div class="related-grid">
+        <a class="related-card" href="blog-psicoterapia-de-grupo.html">
+          <div class="post-meta"><span>17 de fev.</span><span class="dot"></span><span>5 min</span></div>
+          <h3>Psicoterapia de Grupo: Um Método Terapêutico Avançado e Sua Eficácia Comprovada</h3>
+        </a>
+        <a class="related-card" href="blog-desmistificando-autismo.html">
+          <div class="post-meta"><span>23 de mai. de 2025</span><span class="dot"></span><span>6 min</span></div>
+          <h3>Desmistificando o Autismo: A Ciência por Trás dos Mitos</h3>
+        </a>
+        <a class="related-card" href="blog-avaliacao-neuropsicologica-o-que-e.html">
+          <div class="post-meta"><span>24 de abr. de 2025</span><span class="dot"></span><span>1 min</span></div>
+          <h3>Avaliação Neuropsicológica: o que é, para que serve e quando procurar?</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="https://static.wixstatic.com/media/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png/v1/fill/w_260,h_155,al_c,q_90/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png" alt="Logo Neuroevolução">
+          <span>Neuroevolução</span>
+        </div>
+        <p class="tagline">Centro integrado de neuropsicologia, terapias e desenvolvimento em Belém-PA. Cuidado humanizado, em cada etapa do seu caminho.</p>
+        <div class="social-row" style="margin-top:22px;">
+          <a href="https://www.instagram.com/clinicaneuroevolucao" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5591991941515" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Especialidades</h4>
+        <ul>
+          <li><a href="index.html#avaliacao-neuropsicologica">Avaliação Neuropsicológica</a></li>
+          <li><a href="index.html#psicoterapia-infantil">Psicoterapia Infantil</a></li>
+          <li><a href="index.html#psicoterapia-adulto">Psicoterapia Adulto</a></li>
+          <li><a href="index.html#terapia-aba-infantil">Terapia ABA</a></li>
+          <li><a href="index.html#psicopedagogia">Psicopedagogia</a></li>
+          <li><a href="index.html#terapia-ocupacional">Terapia Ocupacional</a></li>
+          <li><a href="index.html#fonoaudiologia">Fonoaudiologia</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Clínica</h4>
+        <ul>
+          <li><a href="index.html#sobre">Sobre nós</a></li>
+          <li><a href="index.html#equipe">Nossa equipe</a></li>
+          <li><a href="index.html#depoimentos">Avaliações</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#contato">Localização</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://api.whatsapp.com/send?phone=5591991941515" target="_blank" rel="noopener">(91) 99194-1515</a></li>
+          <li><a href="mailto:contato@neuroevolucao.com.br">contato@neuroevolucao.com.br</a></li>
+          <li><a href="https://maps.app.goo.gl/tX2ECNc2Rp4XS5uG8" target="_blank" rel="noopener">Umarizal, Belém-PA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Centro Integrado Neuroevolução. Todos os direitos reservados.</span>
+      <span>Belém, Pará</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://api.whatsapp.com/send?phone=5591991941515&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Neuroevolu%C3%A7%C3%A3o." target="_blank" rel="noopener" class="float-wa" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.1 7c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2 1 1-3.1-.2-.3C3.5 15 3 13.5 3 12c0-4.9 4-8.9 9-8.9s9 4 9 8.9-4 9.2-9 9.2z"/></svg>
+</a>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const drawer = document.getElementById('mobileDrawer');
+  navToggle.addEventListener('click', () => {
+    const open = drawer.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    drawer.classList.remove('open');
+    navToggle.classList.remove('open');
+  }));
+</script>
+
+</body>
+</html>
