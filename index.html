@@ -369,6 +369,21 @@
   }
   .about-photos .tall { aspect-ratio: 3/4.4; }
   .about-photos .col-shift { margin-top: 44px; }
+  .about-photos .logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 38%, var(--bg-alt), var(--surface));
+    box-shadow: var(--shadow);
+    padding: 34px 26px;
+  }
+  .about-photos .logo-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: none;
+    border-radius: 0;
+  }
   .about-text p { color: var(--ink-soft); font-size: 1.06rem; line-height: 1.8; margin-top: 20px; }
   .about-text p:first-of-type { margin-top: 18px; }
 
@@ -840,7 +855,9 @@
     <div class="wrap about-grid">
       <div class="about-photos reveal">
         <img class="tall" src="https://static.wixstatic.com/media/06b801_f1404ea295fc423293ab76ac1ba1b48e~mv2.jpeg/v1/fill/w_500,h_720,al_c,q_90/06b801_f1404ea295fc423293ab76ac1ba1b48e~mv2.jpeg" alt="Consultório de atendimento da clínica">
-        <img class="tall col-shift" src="https://static.wixstatic.com/media/06b801_cd6804cfa83e4c3cb2a9a073d69f736c~mv2.jpeg/v1/fill/w_500,h_720,al_c,q_90/06b801_cd6804cfa83e4c3cb2a9a073d69f736c~mv2.jpeg" alt="Recepção da Clínica Neuroevolução">
+        <div class="tall col-shift logo-card">
+          <img src="https://static.wixstatic.com/media/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png/v1/fill/w_700,h_423,al_c,q_95/06b801_b84ac8db85654a9eba4fdee93d765f76~mv2.png" alt="Centro Integrado Neuroevolução">
+        </div>
       </div>
       <div class="about-text reveal">
         <span class="eyebrow">Bem-vindo</span>
